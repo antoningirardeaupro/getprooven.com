@@ -109,7 +109,7 @@ footer .links{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
 .dark .wl input[type=email],.dark .wl input[type=text]{border-color:transparent}
 .dark .wl-msg.is-ok{color:#8ff0bc}.dark .wl-msg.is-err{color:#ffb4ab}
 .dark .wl.done .wl-msg{background:rgba(255,255,255,.1)}
-.tool{max-width:680px;margin:72px auto 0;padding:0 24px}
+.tool{max-width:680px;margin:72px auto 0;padding:0 24px;display:grid;gap:14px}
 .tool a{display:flex;gap:18px;align-items:center;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--border);border-radius:20px;padding:22px 24px;box-shadow:0 10px 30px rgba(14,49,76,.08);transition:transform .15s}
 .tool a:hover{transform:translateY(-2px)}
 .tool b{display:block;font-size:17px}.tool span{font-size:14.5px;color:var(--muted)}
@@ -129,6 +129,12 @@ footer .links{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
 .fields input:focus-visible,.fields select:focus-visible{outline:3px solid var(--orange);outline-offset:1px}
 .calc .f-abonnes,.calc.m-abonnes .f-vues{display:none}
 .calc.m-abonnes .f-abonnes{display:flex}
+#rev:not([data-plat=tiktok]) .t-only,#rev[data-plat=instagram] label.wide:nth-child(2){display:none}
+.fields label.check{flex-direction:row;align-items:center;gap:10px;font-size:15px;cursor:pointer;padding:12px 0}
+.fields label.check input{width:20px;height:20px;flex:none;accent-color:var(--orange)}
+#rev .tabs button{padding:10px 6px}
+ul.src{font-size:14px;padding-left:20px}ul.src li{margin-bottom:6px}
+.res .lab2{color:#ffb568}
 .res{margin-top:20px;border-radius:18px;background:var(--petrol);color:#fff;padding:22px}
 .res .row{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
 .res .big{font-size:clamp(40px,9vw,56px);font-weight:900;letter-spacing:-.03em;line-height:1;font-variant-numeric:tabular-nums}
@@ -157,7 +163,7 @@ footer .links{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://prooven.fr/#org", "name": "Prooven", "legalName": "AUDAX", "url": "https://getprooven.com/", "logo": "https://prooven.fr/assets/chouette-512.png", "email": "antonin@prooven.fr", "founder": {"@id": "https://prooven.fr/a-propos/#antonin"}, "address": {"@type": "PostalAddress", "streetAddress": "60 rue François Ier", "postalCode": "75008", "addressLocality": "Paris", "addressCountry": "FR"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Prooven", "url": "https://getprooven.com/", "inLanguage": "en", "publisher": {"@id": "https://prooven.fr/#org"}}</script>
 </head>
 <body>
-<header class="top"><div class="in"><a class="logo" href="/"><img src="/assets/chouette-512.png" alt="" width="34" height="34">Prooven</a><nav class="nav" aria-label="Main navigation"><a href="/" aria-current="page">Home</a><a href="/engagement-rate-calculator/">Calculator</a><a href="/about/">About</a><a href="/methodology/">Methodology</a><a href="https://prooven.fr/" hreflang="fr" lang="fr">Français</a></nav></div></header>
+<header class="top"><div class="in"><a class="logo" href="/"><img src="/assets/chouette-512.png" alt="" width="34" height="34">Prooven</a><nav class="nav" aria-label="Main navigation"><a href="/" aria-current="page">Home</a><a href="/engagement-rate-calculator/">Engagement</a><a href="/tiktok-money-calculator/">Earnings</a><a href="/about/">About</a><a href="/methodology/">Methodology</a><a href="https://prooven.fr/" hreflang="fr" lang="fr">Français</a></nav></div></header>
 <main>
 <section class="hero dark"><img class="owl" src="/assets/chouette-512.png" alt="The Prooven owl" width="128" height="128">
 <div><span class="badge">Coming soon to the App Store</span></div><h1>Train to <em>get views</em></h1><p class="sub">Prooven analyses your Instagram account, gives you a score out of 100, and teaches you one proven viral format a day, adapted to your niche.</p>
@@ -171,7 +177,7 @@ footer .links{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
 <section class="cards" aria-label="What Prooven does"><div class="card"><div class="pict" aria-hidden="true">📊</div><h3>Your score out of 100</h3><p>Prooven analyses your account and tells you where you stand: your strengths, your weak spots, and what to fix first.</p></div><div class="card"><div class="pict" aria-hidden="true">🎯</div><h3>One proven format a day</h3><p>Videos that already reached millions of views, broken down and adapted to your account: the hook, the structure, and why it works.</p></div><div class="card"><div class="pict" aria-hidden="true">🎮</div><h3>5 minutes a day</h3><p>Streaks, challenges and mini-games to train your creator eye. You get better video after video, without spending your life on it.</p></div></section>
 <section class="how"><h2>How it works</h2><div class="steps"><div class="step"><div class="num">1</div><div><b>Share your Instagram @</b><span>Prooven scans your account and understands your niche, your audience and your style.</span></div></div><div class="step"><div class="num">2</div><div><b>Get your score and your plan</b><span>A score out of 100, the breakdown by criterion, and the formats that can work for you.</span></div></div><div class="step"><div class="num">3</div><div><b>Train every day</b><span>One viral format broken down each day, plus challenges and games to keep improving.</span></div></div></div></section>
 <section class="trust"><img src="/assets/antonin-girardeau.jpg" alt="Antonin Girardeau" width="72" height="72" loading="lazy"><p><b>Built by Antonin Girardeau.</b> Every format comes from real viral videos, broken down one by one. <a href="/methodology/">See the method</a>.</p></section>
-<section class="tool"><a href="/engagement-rate-calculator/"><div class="pict" aria-hidden="true">🧮</div><div><b>Calculate your engagement rate</b><span>Free, no sign-up: compare your video with viral videos in your niche.</span></div></a></section>
+<section class="tool"><a href="/engagement-rate-calculator/"><div class="pict" aria-hidden="true">🧮</div><div><b>Calculate your engagement rate</b><span>Free, no sign-up: compare your video with viral videos in your niche.</span></div></a><a href="/tiktok-money-calculator/"><div class="pict" aria-hidden="true">💶</div><div><b>How much do your views earn?</b><span>TikTok, YouTube Shorts, Instagram: what the platforms really pay in 2026.</span></div></a></section>
 <section class="bottom"><img src="/assets/chouette-512.png" alt="" width="64" height="64" loading="lazy"><h2>Get notified at launch</h2><form class="wl" data-source="accueil-bas" novalidate>
 <div class="wl-row"><label class="vh" for="m-accueil-bas">Your email</label><input id="m-accueil-bas" type="email" name="email" autocomplete="email" inputmode="email" required placeholder="Your email"><label class="vh" for="i-accueil-bas">Your Instagram @ (optional)</label><input id="i-accueil-bas" type="text" name="instagram" autocomplete="off" autocapitalize="off" spellcheck="false" maxlength="60" placeholder="Your Instagram @ (optional)"></div>
 <div class="trap" aria-hidden="true"><label>Site web<input type="text" name="site_web" tabindex="-1" autocomplete="off"></label></div>
@@ -181,6 +187,6 @@ footer .links{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
 </form></section>
 </main>
 <footer><div class="in"><div class="fb">Prooven</div><div class="links"><a href="/legal-notice/">Legal notice</a> · <a href="/privacy/">Privacy</a> · <a href="/methodology/">Methodology</a> · <a href="/about/">About</a></div><div>Published by AUDAX, EURL (French single-member limited liability company) · 60 rue François Ier, 75008 Paris, France · SIREN 101 471 605</div><div>Contact : <a href="mailto:antonin@prooven.fr">antonin@prooven.fr</a> · © 2026 Prooven. Prooven is a trademark filed by AUDAX.</div></div></footer>
-<script src="/assets/site.js?v=6208647e" defer></script>
+<script src="/assets/site.js?v=4dda77c0" defer></script>
 </body>
 </html>
